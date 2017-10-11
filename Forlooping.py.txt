@@ -1,0 +1,30 @@
+#!/usr/bin/python
+
+the_count = [0, 1, 2, 3, 4, 5]
+fruits = ['apples', 'appricots', 'oranges', 'pears']
+change = ['quarter', 25, 'dime', 10, 'nickle', 5, 'penny', 1]
+
+#this is like the foreach loop in C#
+for number in the_count:
+        print "The count is %d, bwa haha" % number
+
+#this is the same but with strings
+for fruit in fruits:
+        print "%s is a fruit" % fruit
+
+#this is also the same but with mixed variablew types
+#for item in change:
+#       print "%s is worth %d in cents"% 
+
+for i in change:
+	print "I have %r " % i
+
+#this is creating an empty list and filling it with a forloop
+elements = []
+
+for i in range(0, 6):
+        print "I am adding %d to your list" % i
+        elements.append(i)
+
+for i in elements:
+	print "the element was %d" % i
