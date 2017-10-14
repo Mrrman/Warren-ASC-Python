@@ -1,0 +1,20 @@
+#!/usr/bin/python
+
+from sys import argv
+
+script, name, age, birthmonth = argv
+prompt = '> '
+
+print "So you are telling me that your name is %s your age is %d and your birthday is %s" % (name,int(a$
+print "Press enter to proceed"
+proceed = raw_input(prompt)
+
+with open("customers.txt", 'a') as customers:
+        customers.write("%s" % name)
+        customers.write("%s" % age)
+        customers.write("%s" % birthmonth)
+
+customers.close()
+print "Just to recap, your name is %s" % name
+print "Your age is %s" % age
+print "And your birthmonth is %s" % birthmonth
