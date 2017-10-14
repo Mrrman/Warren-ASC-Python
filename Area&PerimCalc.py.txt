@@ -1,0 +1,8 @@
+#!/usr/bin/python
+
+l = raw_input("Please enter the length of your rectangle")
+w = raw_input("Please enter the width of your rectangle")
+a = l * w
+p = (2 * l) + (2 * w)
+print "The area of the rectangle is %d" % a
+print "The perimiter of the rectangle is %d" % p
