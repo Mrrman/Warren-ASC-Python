@@ -6,6 +6,9 @@ p = "> "
 
 infected = False
 
+#I want to make lists for the items in the house, the player holding when they leave the hous(5 items for that scenario) then have other people to loot later such as enemyOne-EnemyFour and truck inventory, ect
+#I also want them to be able to pop items off and "give away" or "use" said item
+
 #house_items = "food*clothing*knife*watch*compass*water*lighter*medicine*rifle*pistol*money*ammunition"
 Hi = [food, clothing, knife, watch, compass, water, ligher, medicine, rifle, pistol, money, ammuniation]
 items_holding = []
@@ -243,27 +246,36 @@ def hurtFriend():
 	if choice == "help":
 		if medication in list == true:
 			print"You helped shia"
+			loot()
 		else:
 			print"You dont have any medical supplies and your incompetance cost Shia his life"
+
 
 	if choice == "enemyOne":
 		medicine == True
 		ammunition == True
 		food == True
 		pistol == True
+		choice = raw_input("You picked up medicine, ammunition, food and another pistol, you can help Shia now, press enter to continue")
+			saveShia()
 
-	if choice == "enemyTwo":
+	elif choice == "enemyTwo":
 		medicine == True
 		ammunition == True
 		water == True
 		rifle == True
+		choice = raw_input("You picked up medicine, ammunition, water and a rifle, you can help Shia now, press enter to continue")
+                        saveShia()
 
-	if choice == "enemyThree":
+	elif choice == "enemyThree":
 		truckKeys == True
 		rifle == True
 		ammunition == True
 		water == True
-
+		print "You couldn't find any medicine for shia, he has died, but you do pick up truck keys, a rifle, ammunition, and water."
+		choice = raw_input("With the truck keys you walk to the truck (Press enter to continue)"
+		truck()
+	#items append to list of person
 
 
 
