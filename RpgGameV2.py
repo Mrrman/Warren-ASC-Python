@@ -134,10 +134,7 @@ def home():
 	print"The reporter states that it is happening again, reanimation of the human body"
 	print"The same thing that happened about 875 years prior"
 	print"The reporter says to pack 5 things into one bag and head to the nearest safe station"
-	#print"(Your item choices are [food] [clothing] [knife] [watch] [compass] [water] [lighter] [medicine] (AR10)[rifle] [pistol] [money] [ammunition])"
-	#print"(Enter your choices one by one please)"
-
-	#choice = raw_input(p)
+	
 	while len(p1.items) != 5:
                 system("clear")
 		house.display()
