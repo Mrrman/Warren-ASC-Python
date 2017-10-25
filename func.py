@@ -1,52 +1,39 @@
-#!usr/bin/python
 
 from sys import exit
 
-p = "> "
-
-infected = False
-
-#I want to make lists for the items in the house, the player holding when they leave the hous(5 items for that scenario) then have other people to loot later such as enemyOne-EnemyFour and truck inventory, ect
-#I also want them to be able to pop items off and "give away" or "use" said item
-
-#house_items = "food*clothing*knife*watch*compass*water*lighter*medicine*rifle*pistol*money*ammunition"
-Hi = [food, clothing, knife, watch, compass, water, ligher, medicine, rifle, pistol, money, ammuniation]
-items_holding = []
-
 def start():
-	print"Name: The Last Chapter"
-	print"Setting: Post Apocalypse in some northern part of what used to be The United States"
-	print"Time: about 2900 AD"
-	print"You wake up calmly from a nice and cozy slumber to a beautiful sunrise on a cool morning, and decide to look out your window."
-	print"You look around and see some deer and other fauna in the distance."
-	print"As you continue to look around and enjoy nature, you see a peculiar formation of people near your humble abode"
-	print"(You can either [check it out] or [proceed] with your plans for today)"
+        print"Name: The Last Chapter"
+        print"Setting: Post Apocalypse in some northern part of what used to be The United States"
+        print"Time: about 2900 AD"
+        print"You wake up calmly from a nice and cozy slumber to a beautiful sunrise on a cool morning,$
+        print"You look around and see some deer and other fauna in the distance."
+        print"As you continue to look around and enjoy nature, you see a peculiar formation of people n$
+        print"(You can either [check it out] or [proceed] with your plans for today)"
 
-	choice = raw_input(p)
+        choice = raw_input(p)
 
-	if choice == "check out" or choice == "check it out":
-		gathering_of_people()
-	elif choice == "proceed":
-		morning_routine()
+        if choice == "check out" or choice == "check it out":
+                gathering_of_people()
+        elif choice == "proceed":
+                morning_routine()
 
 def gathering_of_people():
-	print"As you approach the large crowd you start to smell something that you never had before."
-	print"It reeks, whatever it had been must have been dead for a long time."
-	print"The crowd seems to be circled around a person, or what is left of them, but something is quite peculiar about the person..."
-	print"The \"person\" seems to still be alive while in pieces on the crowd..."
-	print"(Inner concious) why is \"it\" still alive? What did this to it?"
-	print"(You can either [ask around] or [observe it] closer)"
+        print"As you approach the large crowd you start to smell something that you never had before."
+        print"It reeks, whatever it had been must have been dead for a long time."
+        print"The crowd seems to be circled around a person, or what is left of them, but something is $
+        print"The \"person\" seems to still be alive while in pieces on the crowd..."
+        print"(Inner concious) why is \"it\" still alive? What did this to it?"
+        print"(You can either [ask around] or [observe it] closer)"
 
-	choice = raw_input(p)
+        choice = raw_input(p)
 
-	if choice == "ask around":
-		ask_crowd()
-	elif choice == "observe it" or choice == "observe":
-		dead("You lean in to take a closer look and it explodes, some mysterious gunk gets all over you. Your skin turns black, your vision goes black and you die.")
+        if choice == "ask around":
+                ask_crowd()
+        elif choice == "observe it" or choice == "observe":
+                dead("You lean in to take a closer look and it explodes, some mysterious gunk gets all $
 def dead(why):
-	print why
-	exit(0)
-
+        print why
+        exit(0)
 def morning_routine():
 	print"You decide to continue on with your morning routine. You brush your teeth and head downstairs."
 	print"You make youself some eggs and coffee and while eating your food you hear a loud explosion!"
@@ -102,43 +89,18 @@ def home():
 	print"(Your item choices are [food] [clothing] [knife] [watch] [compass] [water] [lighter] [medicine] (AR10)[rifle] [pistol] [money] [ammunition])"
 	print"(Enter your choices one by one please)"
 
-#I want them to choose an item and when chosen
 	choice = raw_input(p)
-	while len(items_holding) != 5:
-		if choice == "food":
-			items_holding
-		#elif choice == "clothing":
-		#	items_holding += clothing
-		#elif choice == "knife":
-		#	items_holding += knife
-		#elif choice == "watch":
-		#	items_holding += watch
-		#elif choice == "compass":
-		#	items_holding += compass
-		#elif choice == "water":
-		#	items_holding += water
-                #elif choice == "lighter":
-		#	items_holding += lighter
-                #elif choice == "medicine":
-		#	items_holding += medicine
-                #elif choice == "rifle":
-		#	items_holding += rifle
-                #elif choice == "pistol":
-		#	items_holding += pistol
-                #elif choice == "money":
-		#	items_holding += money
-                #elif choice == "ammuntion":
-		#	items_holding += ammunition
-		#break
-		next = Hi.pop()
+	while len(items_holding) != 5:pass
 
-	print"(There is nothing else to do here at home at this time press enter to start your journey to the safe station)"
+
+
+        print"(There is nothing else to do here at home at this time press enter to start your journey to the safe station)"
 	choice = raw_input(p)
 	if choice = " ":
 		leave()
 	else:
 		leave()
-
+	
 def dead_person_one():
 	print"As you approach your dead friend you notice something odd about them."
 	print"She seems to be decomposing rapidly and as you lean in closer one of her bones pop and the gunk gets on your left ankle"
@@ -334,3 +296,6 @@ def woods():
 
 
 start()
+
+
+
